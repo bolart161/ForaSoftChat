@@ -6,7 +6,7 @@ const ChatRoom = require("./ChatRoom").ChatRoom;
 const http = require('http').createServer();
 const io = require('socket.io')(http);
 
-const port = 8080;
+const port = 3014;
 
 io.on('connection', function(socket) {
 	let userLogin = null;
