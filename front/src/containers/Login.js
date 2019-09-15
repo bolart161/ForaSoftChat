@@ -15,7 +15,9 @@ class Login extends React.Component {
 
 		const onLogin = () => {
 			const name = document.getElementById('login').value;
-			this.props.handleLogin(name);
+			if (name !== '') {
+				this.props.handleLogin(name);
+			}
 		};
 
 		const chatId = (this.props.location.state)? this.props.location.state.chatId : null;
