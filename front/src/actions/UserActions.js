@@ -46,7 +46,6 @@ export function handleLogout() {
 
 export function connectUser(login) {
 	return function(dispatch) {
-		console.log(login);
 		socket.emit('connectUser', login);
 	}
 }
